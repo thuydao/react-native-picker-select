@@ -274,7 +274,7 @@ export default class RNPickerSelect extends PureComponent {
                         />
                     </TouchableOpacity>
                 </View>
-                <TouchableWithoutFeedback
+                <TouchableOpacity
                     onPress={() => {
                         this.togglePicker(true);
                         if (onDonePress) {
@@ -285,7 +285,7 @@ export default class RNPickerSelect extends PureComponent {
                     testID="done_button"
                 >
                     <Text style={[defaultStyles.done, style.done]}>{doneText}</Text>
-                </TouchableWithoutFeedback>
+                </TouchableOpacity>
             </View>
         );
     }
